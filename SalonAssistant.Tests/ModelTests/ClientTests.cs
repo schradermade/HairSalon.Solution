@@ -142,7 +142,7 @@ namespace Salon.Test
       string dateJoin2 = "12/31/2017";
       Client newClient2 = new Client(stylistId2, name2, styleNotes2, stylePrice2, dateJoin2);
 
-      List<Client> newList = new List<Client> {};
+      List<Client> newList = new List<Client> { newClient0, newClient1, newClient2 };
       // Act
       List<Client> result = Client.GetAll();
 
