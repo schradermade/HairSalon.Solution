@@ -70,6 +70,25 @@ namespace Salon.Test
       Assert.AreEqual(1, result);
     }
 
+    [TestMethod]
+    public void GetAll_ReturnsAllStylists_Stylists()
+    {
+      // Arrange
+      string name = "Chanel";
+      string hireDate = "12/31/2020";
+      Stylist newStylist0 = new Stylist(name, hireDate);
+      Stylist newStylist1 = new Stylist(name, hireDate);
+      Stylist newStylist2 = new Stylist(name, hireDate);
+      List<Stylist> newList = new List<Stylist> { };
+
+      // Act
+      List<Stylist> result = Stylist.GetAll();
+
+      // Assert
+      CollectionAssert.AreEqual(newList, result);
+
+    }
+
   }
 }
 
