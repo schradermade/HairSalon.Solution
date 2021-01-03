@@ -16,7 +16,7 @@ namespace Salon
       Configuration = builder.Build();
     }
 
-    public IConfigurationRoot Configuation { get; }
+    public IConfigurationRoot Configuration { get; }
 
     public void ConfigureServices(IServiceCollection services)
     {
@@ -35,12 +35,12 @@ namespace Salon
           name: "default",
           template: "{controller=Home}/{action=Index}/{id?}");
       });
-      
+
       app.Run(async (context) =>
       {
-        await context.Response.WriteAsync("Oops, somethings not quote right here.");
+        await context.Response.WriteAsync("Oops, somethings not quite right here.");
       });
-
+      
     }
   }
 }
