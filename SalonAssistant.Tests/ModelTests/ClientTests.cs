@@ -97,7 +97,7 @@ namespace Salon.Test
       string result = newClient.DateJoin;
 
       // Assert
-      Assert.AreEqual("10/23/2005", result);
+      Assert.AreEqual("12/31/2017", result);
     }
   }
 }
