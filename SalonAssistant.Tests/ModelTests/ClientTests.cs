@@ -99,5 +99,22 @@ namespace Salon.Test
       // Assert
       Assert.AreEqual("12/31/2017", result);
     }
+
+    [TestMethod]
+    public void AssignId_AssignsIdToClient_Int()
+    {
+      // Arrange
+      int stylistId = 1;
+      string name = "Crystal";
+      string styleNotes = "straight hair";
+      double stylePrice = 75;
+      string dateJoin = "12/31/2017";
+      Client newClient = new Client(stylistId, name, styleNotes, stylePrice, dateJoin);
+      
+      // Act
+      int result = newClient.StylistId;
+      //Assert
+      Assert.AreEqual(3, newClient.StylistId);
+    }
   }
 }
