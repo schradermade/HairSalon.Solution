@@ -14,7 +14,7 @@ namespace Salon.Test
     }
 
     [TestMethod]
-    public void SalonConstructor_CreatesInstanceOfStylist_True()
+    public void StylistConstructor_CreatesInstanceOfStylist_True()
     {
       // Arrange
       string name = "Chanel";
