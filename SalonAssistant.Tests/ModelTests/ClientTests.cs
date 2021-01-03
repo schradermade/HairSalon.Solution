@@ -43,7 +43,7 @@ namespace Salon.Test
       string result = newClient.Name;
 
       //Assert
-      Assert.AreEqual("Chanel", result);
+      Assert.AreEqual("Crystal", result);
     }
 
   }
