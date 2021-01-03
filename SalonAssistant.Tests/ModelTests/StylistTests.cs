@@ -67,7 +67,7 @@ namespace Salon.Test
       int result = newStylist.Id;
 
       // Assert
-      Assert.AreEqual(5, result);
+      Assert.AreEqual(1, result);
     }
 
   }
