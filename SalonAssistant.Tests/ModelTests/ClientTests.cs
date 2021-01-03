@@ -82,5 +82,22 @@ namespace Salon.Test
       Assert.AreEqual(75, result);
     }
 
+    [TestMethod]
+    public void DateJoinProperty_ReturnsDateJoined_String()
+    {
+      // Arrange
+      int stylistId = 1;
+      string name = "Crystal";
+      string styleNotes = "straight hair";
+      double stylePrice = 75;
+      string dateJoin = "12/31/2017";
+      Client newClient = new Client(stylistId, name, styleNotes, stylePrice, dateJoin);
+
+      // Act
+      string result = newClient.DateJoin;
+
+      // Assert
+      Assert.AreEqual("10/23/2005", result);
+    }
   }
 }
