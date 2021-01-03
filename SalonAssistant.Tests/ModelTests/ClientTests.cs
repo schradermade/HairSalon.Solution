@@ -114,7 +114,7 @@ namespace Salon.Test
       // Act
       int result = newClient.StylistId;
       //Assert
-      Assert.AreEqual(3, newClient.StylistId);
+      Assert.AreEqual(1, newClient.StylistId);
     }
   }
 }
