@@ -105,7 +105,7 @@ namespace Salon.Test
       string result = Stylist.Find(2).Name;
 
       // Assert
-      Assert.AreEqual("Christian", result);
+      Assert.AreEqual("Crystal", result);
     }
 
   }
