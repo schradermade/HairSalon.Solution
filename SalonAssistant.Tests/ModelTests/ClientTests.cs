@@ -25,7 +25,7 @@ namespace Salon.Test
       Client newClient = new Client(stylistId, name, styleNotes, stylePrice, dateJoin);
 
       // Act
-      Assert.AreEqual(typeof(Stylist), newClient.GetType());
+      Assert.AreEqual(typeof(Client), newClient.GetType());
     }
   }
 }
