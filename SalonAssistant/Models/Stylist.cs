@@ -21,14 +21,19 @@ namespace Salon.Models
       Clients = new List<Client> { };
     }
 
-    //public static Stylist Find (int findId)
-    //{
-      //return 1;
-    //}
+    public static Stylist Find (int findId)
+    {
+      return _stylists[findId -1];
+    }
 
     public static void ClearAll()
     {
       _stylists.Clear();
+    }
+
+    public static List<Stylist> GetAll()
+    {
+      return _stylists;
     }
 
   }
