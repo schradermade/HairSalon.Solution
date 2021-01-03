@@ -79,7 +79,7 @@ namespace Salon.Test
       Stylist newStylist0 = new Stylist(name, hireDate);
       Stylist newStylist1 = new Stylist(name, hireDate);
       Stylist newStylist2 = new Stylist(name, hireDate);
-      List<Stylist> newList = new List<Stylist> { };
+      List<Stylist> newList = new List<Stylist> { newStylist0, newStylist1, newStylist2 };
 
       // Act
       List<Stylist> result = Stylist.GetAll();
