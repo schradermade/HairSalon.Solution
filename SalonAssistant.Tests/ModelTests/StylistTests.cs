@@ -52,7 +52,7 @@ namespace Salon.Test
       string result = newStylist.HireDate;
 
       // Assert
-      Assert.AreEqual("10/15/2015", result);
+      Assert.AreEqual("12/31/2020", result);
     }
   }
 }
