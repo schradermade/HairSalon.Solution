@@ -19,7 +19,7 @@ namespace Salon.Test
       // Arrange
       string name = "Chanel";
       string hireDate = "12/31/2020";
-      Client newStylist = new Client();
+      Stylist newStylist = new Stylist(name, hireDate);
 
       // Assert
       Assert.AreEqual(typeof(Stylist), newStylist.GetType());
