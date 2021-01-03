@@ -54,6 +54,22 @@ namespace Salon.Test
       // Assert
       Assert.AreEqual("12/31/2020", result);
     }
+
+    [TestMethod]
+    public void IdProperty_ReturnsIdProperty_Int()
+    {
+      // Arrange
+      string name = "Chanel";
+      string hireDate = "12/31/2020";
+      Stylist newStylist = new Stylist(name, hireDate);
+
+      // Act
+      int result = newStylist.Id;
+
+      // Assert
+      Assert.AreEqual(5, result);
+    }
+
   }
 }
 
