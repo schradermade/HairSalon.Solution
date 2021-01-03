@@ -116,5 +116,39 @@ namespace Salon.Test
       //Assert
       Assert.AreEqual(1, newClient.StylistId);
     }
+
+    [TestMethod]
+    public void GetAll_ReturnsListOfClients_String()
+    {
+      // Arrange
+      int stylistId0 = 1;
+      string name0 = "Crystal";
+      string styleNotes0 = "straight hair";
+      double stylePrice0 = 75;
+      string dateJoin0 = "12/31/2017";
+      Client newClient0 = new Client(stylistId0, name0, styleNotes0, stylePrice0, dateJoin0);
+      
+      int stylistId1 = 1;
+      string name1 = "Crystal";
+      string styleNotes1 = "straight hair";
+      double stylePrice1 = 75;
+      string dateJoin1 = "12/31/2017";
+      Client newClient1 = new Client(stylistId1, name1, styleNotes1, stylePrice1, dateJoin1);
+
+      int stylistId2 = 1;
+      string name2 = "Crystal";
+      string styleNotes2 = "straight hair";
+      double stylePrice2 = 75;
+      string dateJoin2 = "12/31/2017";
+      Client newClient2 = new Client(stylistId2, name2, styleNotes2, stylePrice2, dateJoin2);
+
+      List<Client> newList = new List<Client> {};
+      // Act
+      List<Client> result = Client.GetAll();
+
+      // Assert
+      CollectionAssert.AreEqual(newList, result);
+    }
+
   }
 }
