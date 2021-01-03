@@ -27,5 +27,24 @@ namespace Salon.Test
       // Act
       Assert.AreEqual(typeof(Client), newClient.GetType());
     }
+
+    [TestMethod]
+    public void NameProperty_ReturnsNameValue_String()
+    {
+      // Arrange
+      int stylistId = 1;
+      string name = "Crystal";
+      string styleNotes = "straight hair";
+      double stylePrice = 75;
+      string dateJoin = "12/31/2017";
+      Client newClient = new Client(stylistId, name, styleNotes, stylePrice, dateJoin);
+
+      // Act
+      string result = newClient.Name;
+
+      //Assert
+      Assert.AreEqual("Chanel", result);
+    }
+
   }
 }
