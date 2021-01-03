@@ -3,28 +3,28 @@ using System.Collections.Generic;
 using Salon.Models;
 using System;
 
-namespace Salon.Test{
+namespace Salon.Test
+{
+  [TestClass]
+  public class StylistTests : IDisposable
   {
-    [TestClass]
-    public class SalonTests : IDisposable
+    public void Dispose()
     {
-      public void Dispose()
-      {
-        Salon.ClearAll();
-      }
+      Stylist.ClearAll();
+    }
 
-      [TestMethod]
-      public void SalonConstructor_CreatesInstanceOfStylist_True()
-      {
-        // Arrange
-        string name = "Chanel";
-        DateTime hireDate = 12/31/2020;
-        Stylist newStylist = new Stylist(name, hireDate);
+    [TestMethod]
+    public void SalonConstructor_CreatesInstanceOfStylist_True()
+    {
+      // Arrange
+      string name = "Chanel";
+      string hireDate = "12/31/2020";
+      Client newStylist = new Client();
 
-        // Assert
-        Assert.AreEqual(typeof(Stylist), newStylist.GetType());
-      }
+      // Assert
+      Assert.AreEqual(typeof(Stylist), newStylist.GetType());
     }
   }
 }
+
 
