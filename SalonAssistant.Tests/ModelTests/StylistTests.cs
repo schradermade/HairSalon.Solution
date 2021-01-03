@@ -37,7 +37,7 @@ namespace Salon.Test
       string result = newStylist.Name;
 
       //Assert
-      Assert.AreEqual("Tom", result);
+      Assert.AreEqual("Chanel", result);
     }
   }
 }
