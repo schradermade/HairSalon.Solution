@@ -39,6 +39,21 @@ namespace Salon.Test
       //Assert
       Assert.AreEqual("Chanel", result);
     }
+
+    [TestMethod]
+    public void HireDateProperty_ReturnsHireDateValue_String()
+    {
+      // Arrange
+      string name = "Chanel";
+      string hireDate = "12/31/2020";
+      Stylist newStylist = new Stylist(name, hireDate);
+
+      // Act
+      string result = newStylist.HireDate;
+
+      // Assert
+      Assert.AreEqual("10/15/2015", result);
+    }
   }
 }
 
