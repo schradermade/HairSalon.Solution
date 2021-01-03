@@ -79,7 +79,7 @@ namespace Salon.Test
       double result = newClient.StylePrice;
 
       // Assert
-      Assert.AreEqual(125, result);
+      Assert.AreEqual(75, result);
     }
 
   }
