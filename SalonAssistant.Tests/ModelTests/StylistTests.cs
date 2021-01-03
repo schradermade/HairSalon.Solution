@@ -86,7 +86,26 @@ namespace Salon.Test
 
       // Assert
       CollectionAssert.AreEqual(newList, result);
+    }
 
+    [TestMethod]
+    public void FindStylistById_ReturnsStylistById_Stylist()
+    {
+      // Arrange
+      string name0 = "Chanel";
+      string hireDate0 = "12/31/2020";
+      string name1 = "Crystal";
+      string hireDate1 = "12/31/2019";
+      string name2 = "Christian";
+      string hireDate2 = "12/31/2010";
+      Stylist newStylist0 = new Stylist(name0, hireDate0);
+      Stylist newStylist1 = new Stylist(name1, hireDate1);
+      Stylist newStylist2 = new Stylist(name2, hireDate2);
+      // Act
+      string result = Stylist.Find(2).Name;
+
+      // Assert
+      Assert.AreEqual("Christian", result);
     }
 
   }
