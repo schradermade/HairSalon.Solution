@@ -61,7 +61,7 @@ namespace Salon.Test
       string result = newClient.StyleNotes;
 
       // Assert
-      Assert.AreEqual("curly hair", result);
+      Assert.AreEqual("straight hair", result);
     }
 
   }
