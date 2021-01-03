@@ -10,7 +10,7 @@ namespace Salon
   {
     public Startup(IHostingEnvironment env)
     {
-      var builder new ConfigurationBuilder()
+      var builder = new ConfigurationBuilder()
         .SetBasePath(env.ContentRootPath)
         .AddEnvironmentVariables();
       Configuration = builder.Build();
@@ -40,7 +40,7 @@ namespace Salon
       {
         await context.Response.WriteAsync("Oops, somethings not quote right here.");
       });
-      
+
     }
   }
 }

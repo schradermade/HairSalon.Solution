@@ -21,9 +21,9 @@ namespace Salon.Models
       Clients = new List<Client> { };
     }
 
-    public static Stylist Find (int findId)
-    {
-      
-    }
+    //public static Stylist Find (int findId)
+    //{
+      //return 1;
+    //}
   }
 }
