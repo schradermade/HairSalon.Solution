@@ -46,5 +46,23 @@ namespace Salon.Test
       Assert.AreEqual("Crystal", result);
     }
 
+    [TestMethod]
+    public void StyleNotesProperty_ReturnsStyleNotes_String()
+    {
+      // Arrange
+      int stylistId = 1;
+      string name = "Crystal";
+      string styleNotes = "straight hair";
+      double stylePrice = 75;
+      string dateJoin = "12/31/2017";
+      Client newClient = new Client(stylistId, name, styleNotes, stylePrice, dateJoin);
+
+      // Act
+      string result = newClient.StyleNotes;
+
+      // Assert
+      Assert.AreEqual("curly hair", result);
+    }
+
   }
 }
