@@ -196,7 +196,7 @@ namespace Salon.Test
       Client newClient = new Client(stylistId, name, styleNotes, stylePrice, dateJoin);
 
       // Act
-      Client result = Client.Find(2);
+      Client result = Client.Find(1);
 
       // Assert
       Assert.AreEqual(newClient, result);
