@@ -1,6 +1,6 @@
 @using Salon.Models;
 
-<h1>Client of @Model["stylist"].Name's:</h1>
+<h1>Clientele for @Model["stylist"].Name:</h1>
 
 <ol>
   @foreach (Client client in @Model["clients"])
@@ -18,3 +18,9 @@
 <p><a href='/stylists/@Model["stylist"].Id/clients/new'>Add new Client</a></p>
 <p><a href='/stylists'>Return to Stylist List</a></p>
 <p><a href='/'>Return Home</a></p>
+
+<br><br><br><br>
+
+<form action="/stylists/delete" method="post">
+  <button type="submit" class="btn btn-danger">Delete @Model["stylist"].Name</button>
+</form>

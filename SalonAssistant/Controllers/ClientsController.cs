@@ -29,14 +29,14 @@ namespace Salon.Controllers
       return RedirectToAction("Index");
     }
 
-    [HttpPost("/orders/delete")]
+    [HttpPost("/clients/delete")]
     public ActionResult DeleteClient()
     {
       Client.ClearAll();
       return RedirectToAction("Index");
     }
 
-    [HttpGet("/orders/{id}")]
+    [HttpGet("/clients/{id}")]
     public ActionResult Show(int id)
     {
       Client foundClient = Client.Find(id);

@@ -39,7 +39,7 @@ namespace Salon.Controllers
     }
 
     [HttpPost("/stylists/delete")]
-    public ActionResult DeleteClient()
+    public ActionResult DeleteStylist()
     {
       Stylist.ClearAll();
       return RedirectToAction("Index");
