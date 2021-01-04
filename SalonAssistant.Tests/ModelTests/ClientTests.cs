@@ -218,7 +218,7 @@ namespace Salon.Test
       int result = newClient.Id;
 
       // Assert
-      Assert.AreEqual(2, result);
+      Assert.AreEqual(1, result);
 
     }
 
