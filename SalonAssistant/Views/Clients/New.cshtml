@@ -1,0 +1,24 @@
+@{
+  Layout = "_layout";
+}
+
+<h1>Add New Client to Salon</h1>
+
+<form action="/clients" method="post">
+  <label for="stylistId">stylistId:</label>
+  <input id="stylistId" name="stylistId" type="text" placeholder="Enter Stylist Id here">
+
+  <label for="name">Client Name:</label>
+  <input id="name" name="name" type="text" placeholder="Enter Client Name Here">
+
+  <label for="styleNotes">Style Notes:</label>
+  <input id="styleNotes" name="styleNotes" type="text" placeholder="Enter Clients Hair Style">
+
+  <label for="stylePrice">Style Price:</label>
+  <input id="stylePrice" name="stylePrice" type="text" placeholder="Enter Price to Client">
+
+  <label for="dateJoin">Date Client added to Salon:</label>
+  <input id="dateJoin" name="dateJoin" type="text" placeholder="Enter date Client joined Salon">
+
+  <button type="submit" class="btn btn-success">Add Client to Salon</button>
+</form>
