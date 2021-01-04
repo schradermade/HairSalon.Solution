@@ -1,0 +1,29 @@
+@{
+  Layout = "_layout";
+}
+
+<h1>Client Data for @Model["client"].Id</h1>
+
+<br>
+
+<h3>Client Stylist:</h3>
+<p>@Model["stylist"].Name</p>
+<br>
+<h3>Client Name:</h3>
+<p>@Model["client"].Name</p>
+<br>
+<h3>Client Style Notes:</h3>
+<p>@Model["client"].StyleNotes</p>
+<br>
+<h3>Client Style Price:</h3>
+<p>@Model["client"].StylePrice</p>
+<br>
+<h3>Client Join Date:</h3>
+<p>@Model["client"].DateJoin</p>
+
+<br><br>
+
+<a href='/clients/new'>Add Another Client</a>
+<a href='/stylists'>Go to Stylists</a>
+
+<br><br>
