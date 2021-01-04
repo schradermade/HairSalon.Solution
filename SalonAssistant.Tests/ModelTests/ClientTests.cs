@@ -150,7 +150,7 @@ namespace Salon.Test
       CollectionAssert.AreEqual(newList, result);
     }
 
-        [TestMethod]
+    [TestMethod]
     public void ClearAll_ReturnsListOfClients_String()
     {
       // Arrange
@@ -200,6 +200,26 @@ namespace Salon.Test
 
       // Assert
       Assert.AreEqual(newClient, result);
+    }
+
+    [TestMethod]
+    public void DeleteClient_DeletesSelectedClient_True()
+    {
+      // Arrange
+      int stylistId = 1;
+      string name = "Chanel";
+      string styleNotes = "straight hair";
+      double stylePrice = 75;
+      string dateJoin = "12/31/2017";
+      Client newClient = new Client(stylistId, name, styleNotes, stylePrice, dateJoin);
+
+      // Act
+      Client.DeleteClient(1);
+      int result = newClient.Id;
+
+      // Assert
+      Assert.AreEqual(2, result);
+
     }
 
   }
