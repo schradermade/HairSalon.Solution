@@ -1,0 +1,20 @@
+@using Salon.Models;
+
+<h1>Client of @Model["stylist"].Name's:</h1>
+
+<ol>
+  @foreach (Client client in @Model["clients"])
+  {
+    <li><a href='/clients/@client.Id'>@client.Name</a></li>
+    <h3>Style Notes:</h3>
+    <p>@client.StyleNotes</p>
+    <h3>Style Price:</h3>
+    <p>@client.StylePrice</p>
+    <h3>Date Client Joined Salon:</h3>
+    <p>@client.DateJoin</p>
+  }
+</ol>
+
+<p><a href='/stylists/@Model["stylist"].Id/clients/new'>Add new Client</a></p>
+<p><a href='/stylists'>Return to Stylist List</a></p>
+<p><a href='/'>Return Home</a></p>

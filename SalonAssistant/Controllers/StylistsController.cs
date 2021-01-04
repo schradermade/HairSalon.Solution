@@ -56,7 +56,7 @@ namespace Salon.Controllers
       model.Add("clients", stylistClients);
       model.Add("stylist", foundStylist);
       return View("Show", model);
-
+    }
       [HttpPost("/stylists/{id}")]
       public ActionResult Destroy(int id)
       {
@@ -73,5 +73,3 @@ namespace Salon.Controllers
       }
     }
   }
-
-}

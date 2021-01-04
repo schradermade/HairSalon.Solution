@@ -1,0 +1,15 @@
+@{
+  Layout = "_layout";
+}
+
+<h1>Add a Stylist to Salon</h1>
+
+<form action="/stylists" method="post">
+  <label for="name">Stylist Name:</label>
+  <input id="name" name="name" type="text" placeholder="Stylist name here">
+
+  <label for="hireDate">Hire Date:</label>
+  <input id="hireDate" name="hireDate" type="date" placeholder="Hire date here">
+
+  <button type="submit" class="btn btn-success">Add Stylist</button>
+</form>

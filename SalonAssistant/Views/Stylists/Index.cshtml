@@ -1,0 +1,31 @@
+@using Salon.Models;
+
+@{
+  Layout = "_layout";
+}
+
+<h1>Salon Stylists</h1>
+
+@if (@Model.Count == 0)
+{
+  <h3>There are no active Stylists at this Salon</h3>
+}
+
+<ol>
+@foreach (Stylist stylist in Model)
+{
+  <div>
+      <li><a href='/stylists/@stylist.Id'>@stylist.Name</a></li>
+      <p>Hire Date:</p>
+      <p>@stylist.HireDate</p>
+  </div>
+}
+</ol>
+
+<br><br>
+
+<a href='/stylists/new'><button class="btn btn-success">Add a Stylist</button></a>
+
+<form action="/stylists/delete" method="post">
+  <button type="submit" class="btn btn-danger">Delete Stylist</button>
+</form>

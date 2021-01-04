@@ -36,5 +36,15 @@ namespace Salon.Models
       return _stylists;
     }
 
+    public void AddClient(Client client)
+    {
+      Clients.Add(client);
+    }
+
+    public static void DeleteStylist(int id)
+    {
+      _stylists.RemoveAll(r => r.Id == id);
+    }
+
   }
 }

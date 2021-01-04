@@ -20,12 +20,12 @@ namespace Salon.Controllers
       return View();
     }
 
-    [HttpPost("/orders")]
+    [HttpPost("/clients")]
     public ActionResult Create(int stylistId, string name, string styleNotes, double stylePrice, string dateJoin)
     {
       Client newClient = new Client(stylistId, name, styleNotes, stylePrice, dateJoin);
       var stylist = Stylist.Find(stylistId);
-      stylist.addClient(newClient);
+      stylist.AddClient(newClient);
       return RedirectToAction("Index");
     }
 
