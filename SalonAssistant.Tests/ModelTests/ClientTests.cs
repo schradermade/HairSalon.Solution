@@ -184,5 +184,23 @@ namespace Salon.Test
       CollectionAssert.AreEqual(newList, result);
     }
 
+    [TestMethod]
+    public void Find_FindClientById_Int()
+    {
+      // Arrange
+      int stylistId = 1;
+      string name = "Crystal";
+      string styleNotes = "straight hair";
+      double stylePrice = 75;
+      string dateJoin = "12/31/2017";
+      Client newClient = new Client(stylistId, name, styleNotes, stylePrice, dateJoin);
+
+      // Act
+      Client result = Client.Find(2);
+
+      // Assert
+      Assert.AreEqual(newClient, result);
+    }
+
   }
 }
